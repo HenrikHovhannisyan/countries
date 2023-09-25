@@ -57,10 +57,13 @@ body {
     grid-gap: 48px;
 }
 .card {
+    display: grid;
+    justify-content: center;
     background-color: var(--bg-offset);
-    padding: 0px;
+    padding: 10px;
     box-shadow: 0px 2px 4px var(--border);
     transition: all 0.3s cubic-bezier(0.075, 0.82, 0.165, 1);
+    cursor: pointer;
 }
 .card:hover {
     transform: scale(1.1);
@@ -72,11 +75,10 @@ body {
     overflow: visible;
 }
 .card-image {
-    max-height: 150px;
+    max-height: 200px;
     overflow: hidden;
 }
 .card-image img {
-    margin-top: -13px;
     min-height: 100%;
     width: 100%;
     object-fit: cover;
@@ -108,6 +110,7 @@ body {
     margin: 48px 0;
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
 
 @media (max-width: 375px) {
